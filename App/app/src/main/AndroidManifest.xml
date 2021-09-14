@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hunminjungum">
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:requestLegacyExternalStorage="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.hunminjungum"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SecondActivity" android:label="두번째메인">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".JoinActivity" android:label="회원가입"/>
+        <activity android:name=".LoginActivity" android:label="로그인"/>
+        <activity android:name=".ModifyActivity" android:label="회원정보수정"/>
+        <activity android:name=".CommunityActivity" android:label="커뮤니티"/>
+        <activity android:name=".WriteFreeActivity" android:label="자유게시판"/>
+        <activity android:name=".OcrActivity" android:label="최근번역목록"/>
+        <activity android:name=".FreeBoardListView" android:label="자유게시판상세히"/>
+        <activity android:name=".ModifyFreeBoard" android:label="자유게시판수정"/>
+        <activity android:name=".WriteInfoActivity" android:label="정보게시판"/>
+        <activity android:name=".WriteSuggestActivity" android:label="건의게시판"/>
+        <activity android:name=".WriteReportActivity" android:label="신고게시판"/>
+        <activity android:name=".ModifyInfoBoard" android:label="정보게시판수정"/>
+        <activity android:name=".InfoBoardListView" android:label="정보게시판상세히"/>
+        <activity android:name=".ModifySuggestBoard" android:label="건의게시판수정"/>
+        <activity android:name=".SuggestBoardListView" android:label="건의게시판상세히"/>
+        <activity android:name=".ModifyReportBoard" android:label="신고게시판수정"/>
+        <activity android:name=".ReportBoardListView" android:label="신고게시판상세히"/>
+        <activity android:name=".OcrResultActivity" android:label="훈민점음">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".BluetoothActivity" android:label="블루투스"/>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+</manifest>

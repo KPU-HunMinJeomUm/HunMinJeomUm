@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_gravity="left">
+    <TextView
+        android:id="@+id/comment_user1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="작성자"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="3dp"/>
+    <TextView
+        android:id="@+id/comment_user2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="내용"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@null"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"/>
+    <Button
+        android:id="@+id/comment_delete"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:background="#595959"
+        android:text="삭제"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginTop="3dp"
+        android:visibility="gone"/>
+</LinearLayout>
