@@ -150,15 +150,6 @@ overflow:visible !important;
 		// 송신
 		String [] test = sendDir.split("\\.");
 		String type = test[test.length-1];
-		if(!type.equals("png")&& !type.equals("jpg")&!type.equals("jpeg")&&!type.equals("pdf")&&!type.equals("ppt")&&!type.equals("pptx")&&!type.equals("doc")&&!type.equals("docx")&&!type.equals("hwp") ){ %>
-			<script>
-				alert("지원하지 않는 파일 형식입니다");
-				document.location.href= "service.jsp";
-			</script>
-		
-		<%
-			return;
-		}
 		String fileType = test[test.length-1] + ":type"; 
 		System.out.println("파일타입은" + fileType); 
 
