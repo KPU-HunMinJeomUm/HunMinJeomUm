@@ -64,7 +64,7 @@ public class OcrResultActivity extends AppCompatActivity implements TextPlayer, 
         String action = intent.getAction();
         String type = intent.getType();
         ocrResult=intent.getStringExtra("ocr_result");
-       /*if(Intent.ACTION_SEND.equals(action) && type!=null){
+       if(Intent.ACTION_SEND.equals(action) && type!=null){
             if("text/plain".equals(type)){
                 ocrResult = intent.getStringExtra(Intent.EXTRA_TEXT);
             }
@@ -74,7 +74,7 @@ public class OcrResultActivity extends AppCompatActivity implements TextPlayer, 
             if("image/*".equals(type)){
 
             }
-        }*/
+        }
         if(!session_id.equals("")&&!ocrResult.equals("null")&&!ocrResult.equals("첨부하신 파일에 텍스트가 존재하지 않습니다. \n")&&!ocrResult.equals("")) {
             Response.Listener<String> responseListener = new Response.Listener<String>() {
                 @Override
