@@ -1,0 +1,16 @@
+/* 기본 style 제거 */
+* {padding: 0;margin: 0;text-decoration: none;list-style: none;box-sizing: border-box;line-height: 1.5;font-family: 'Spoqa Han Sans Neo', '-apple-system', 'sans-serif';}
+
+/* body 영역 */
+body{width: 100vw; height: 100vh;}
+
+/* content */
+.content-wrap{width: 100%;}
+.content{max-width: 500px;height: 100%;margin-left: auto;margin-right: auto; margin-top: 11vh;}
+
+/* input file */
+#file{margin-bottom: 8px;}
+
+/* drop 영역 */
+#dropZone{width: 500px; height: 300px; border: 2px dashed #000000;text-align: center;padding-top: 75px;cursor: pointer;}
+#dropZone p{margin-bottom: 8px;}
