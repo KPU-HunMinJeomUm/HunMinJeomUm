@@ -151,6 +151,7 @@
   <tr>
     <td>SMPS</td>
     <td>전원 공급 장치</td>
+    <td>-</td>
     <td>출력 전압 5V, 출력 전류 18A</td>
   </tr>
   <tr>
@@ -168,6 +169,7 @@
   <tr>
     <td>Python</td>
     <td>라즈베리파이 구현</td>
+    <td>-</td>
     <td>-</td>
   </tr>
     <tr>
