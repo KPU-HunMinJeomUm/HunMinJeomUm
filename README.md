@@ -128,30 +128,35 @@
   </tr>
   <tr>
     <td>OS</td>
-    <td>Window</td>
-    <td>아두이노를 동작시키기 위한 OS</td>
+    <td>Ubuntu Linux</td>
+    <td>라즈베리파이 OS</td>
     <td>-</td>
   </tr>
   <tr>
     <td  rowspan=3>디바이스</td>
     <td>Arduino UNO</td>
-    <td>아두이노 점자 표시 모듈과 연결</td>
+    <td>아두이노 점자 모듈 제어</td>
     <td>Arduino Uno R3, 5V</td>
+  </tr>
+  <tr>
+    <td>Raspberry Pi</td>
+    <td>아두이노 제어 및 수신량 증가</td>
+    <td>5V 3A</td>
   </tr>
   <tr>
     <td>아두이노 점자 표시 모듈</td>
     <td>점자를 표현하기 위한 것으로 3개당 한 글자 표현</td>
-    <td>5V, 2A</td>
+    <td>5V, 6A(총 18A)</td>
   </tr>
   <tr>
     <td>SMPS</td>
     <td>전원 공급 장치</td>
-    <td>출력 전압 5V, 출력 전류 2A</td>
+    <td>출력 전압 5V, 출력 전류 18A</td>
   </tr>
   <tr>
     <td>개발도구</td>
-    <td>ARDUINO</td>
-    <td>아두이노 IDE</td>
+    <td>ARDUINO IDE</td>
+    <td>아두이노 개발 툴</td>
     <td>1.8.1 GPL 라이선스</td>
   </tr>
   <tr>
@@ -160,10 +165,15 @@
     <td>아두이노 구현</td>
     <td>-</td>
   </tr>
+  <tr>
+    <td>Python</td>
+    <td>라즈베리파이 구현</td>
+    <td>-</td>
+  </tr>
     <tr>
     <td>클래스</td>
-    <td>Software Serial</td>
-    <td>소프트웨어적으로 시리얼 포트를 구현</td>
+    <td>Braille</td>
+    <td>점자 모듈 클래스</td>
     <td>-</td>
   </tr>
 </table>
