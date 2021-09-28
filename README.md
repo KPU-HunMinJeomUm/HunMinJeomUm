@@ -19,7 +19,7 @@
 
 ---------------------------------
 ### 전체 시스템 구성도
-<img src="https://user-images.githubusercontent.com/74261590/122761392-25dd6500-d2d7-11eb-9add-4a93fa4ac53c.jpg">
+![System image](https://user-images.githubusercontent.com/59948918/135047006-130d096e-2698-4a8c-a3c2-d7e61246fee6.png)
 
 ---------------------------------
 ### 훈민점의 구성 및 개발자
